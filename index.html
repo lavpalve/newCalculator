@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Online Calculator</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: rgb(26, 58, 11);
+            }
+            .container{
+                width: max-content;
+                height: auto;
+                margin: 50px auto;
+                box-shadow: 0 0 10px #0f0f0f;
+                background-color: #222e47;
+            }
+            .displayBox{
+                width: 91.7%;
+                height: 60px;
+                font-size: 42px;
+                padding:10px 10px;
+                color: #f0f0f0;
+                border: 1px solid #3e0bca;
+                background-color: #1b273f;
+            }
+            .buttonsDiv{
+
+            }
+            .numBtn{
+                margin: 2px 2px;
+                width: 65px;
+                height: 65px;
+                font-size: large;
+                color: #f0f0f0;
+                background-color: gray;
+            }
+            .numBtn:hover{
+                color: #0f0f0f;
+                background-color:  #f0f0f0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="display" class="displayBox">0</div>
+            <div class="buttonsDiv">
+                <button data-number="" class="numBtn">AC</button>
+                <button data-number="" class="numBtn">C</button>
+                <button data-number="" class="numBtn"  id="remainderBtn">%</button>
+                <button data-number="" class="numBtn"  id="divisionBtn">/</button><br>
+                <button data-number="7" class="numBtn number">7</button>
+                <button data-number="8" class="numBtn number">8</button>
+                <button data-number="9" class="numBtn number">9</button>
+                <button data-number="" class="numBtn" id="multiplyBtn">X</button><br>
+                <button data-number="4" class="numBtn number">4</button>
+                <button data-number="5" class="numBtn number">5</button>
+                <button data-number="6" class="numBtn number">6</button>
+                <button data-number="" class="numBtn" id="minusBtn">-</button><br>
+                <button data-number="1" class="numBtn number">1</button>
+                <button data-number="2" class="numBtn number">2</button>
+                <button data-number="3" class="numBtn number">3</button>
+                <button data-number="" class="numBtn" id="addBtn">+</button><br>
+                <button data-number="0" class="numBtn number">0</button>
+                <button data-number="" class="numBtn">.</button>
+                <button data-number="" class="numBtn equalBtn" style="width: 138px;" id="equalBtn">=</button>
+                
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
