@@ -8,24 +8,24 @@ const numBtnClicked = (e) => {
         result += e.target.dataset.number;   // arithmatic sign before value
         display(result);
     }else if(operation == '+'){
-        operationNewNum = e.target.dataset.number;    // arithmatic sign after value
+        operationNewNum += e.target.dataset.number;    // arithmatic sign after value and + sign used for append
         var displayText = document.getElementById('display').innerText;
         document.getElementById('display').innerText = displayText + e.target.dataset.number;
     }else if(operation == '-'){
-        operationNewNum = e.target.dataset.number;
+        operationNewNum += e.target.dataset.number;
         var displayText = document.getElementById('display').innerText;
         document.getElementById('display').innerText = displayText + e.target.dataset.number;
     }else if(operation == '*'){
-        operationNewNum = e.target.dataset.number;
+        operationNewNum += e.target.dataset.number;
         var displayText = document.getElementById('display').innerText;
        
         document.getElementById('display').innerText = displayText + e.target.dataset.number;
     }else if(operation == '/'){
-        operationNewNum = e.target.dataset.number;
+        operationNewNum += e.target.dataset.number;
         var displayText = document.getElementById('display').innerText;
         document.getElementById('display').innerText = displayText + e.target.dataset.number;
     }else if(operation == '%'){
-        operationNewNum = e.target.dataset.number;
+        operationNewNum += e.target.dataset.number;
         var displayText = document.getElementById('display').innerText;
         document.getElementById('display').innerText = displayText + e.target.dataset.number;
     }
