@@ -81,14 +81,13 @@ const equalBtnClicked = () => {
 }
 
 const display = (value) =>{
-    document.getElementById("display").innerHTML = value
+    document.getElementById("display").innerHTML = value;
 }
 
 const allClearBtnClicked = () =>{
     operation = ''; 
-    result = 0;
     operationNewNum = '';
-    display(result);
+    document.getElementById("display").innerHTML = 0;
 }
 
 let numberBtn = document.querySelectorAll(".number");
