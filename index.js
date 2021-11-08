@@ -87,6 +87,7 @@ const display = (value) =>{
 const allClearBtnClicked = () =>{
     operation = ''; 
     operationNewNum = '';
+    result = '';
     document.getElementById("display").innerHTML = 0;
 }
 
