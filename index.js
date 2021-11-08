@@ -84,6 +84,13 @@ const display = (value) =>{
     document.getElementById("display").innerHTML = value
 }
 
+const allClearBtnClicked = () =>{
+    operation = ''; 
+    result = 0;
+    operationNewNum = '';
+    display(result);
+}
+
 let numberBtn = document.querySelectorAll(".number");
 numberBtn.forEach( singleNumBtn =>{
     singleNumBtn.addEventListener('click', numBtnClicked);
@@ -109,3 +116,6 @@ remainderBtn.addEventListener('click', remainderBtnClicked);
 
 var equalBtn = document.getElementById("equalBtn");
 equalBtn.addEventListener('click', equalBtnClicked);
+
+var allClearBtn = document.getElementById("allClear");
+allClearBtn.addEventListener('click', allClearBtnClicked);
